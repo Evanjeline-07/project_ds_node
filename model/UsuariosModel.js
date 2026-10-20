@@ -31,7 +31,7 @@ const criarUsuario = async (
         senha
     )
 `;
-                 VALUES (?, ?, ?)`;
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,)`;
     const [resultado] = await db.execute(sql, [nome, login, senha]);
     return resultado;
 }
